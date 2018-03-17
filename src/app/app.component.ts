@@ -1,10 +1,12 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 
 import {} from '@types/googlemaps';
 
 import TravelMode = google.maps.TravelMode;
 import DirectionsStatus = google.maps.DirectionsStatus;
 import DirectionsRenderer = google.maps.DirectionsRenderer;
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { PolComponent } from './pol/pol.component';
 
 @Component({
     selector: 'app-root',
@@ -15,6 +17,12 @@ export class AppComponent implements OnInit {
     directionsDisplay: DirectionsRenderer;
     @ViewChild('gmap') gmapElement: any;
     map: google.maps.Map;
+
+    constructor(public dialog: MatDialog) {}    
+
+    openDialog(): void {
+        let dialogRef = this.dialog.open(PolComponent, {});
+    }
 
     ngOnInit() {
         const mapProp = {

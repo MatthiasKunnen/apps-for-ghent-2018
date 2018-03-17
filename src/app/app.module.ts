@@ -41,10 +41,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PolComponent } from './pol/pol.component';
+import { NavigationComponent } from './pol/navigation/navigation.component';
+import { StartComponent } from './pol/start/start.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        PolComponent,
+        NavigationComponent,
+        StartComponent,
     ],
     imports: [
         BrowserModule,
@@ -89,6 +95,7 @@ import { AppComponent } from './app.component';
     ],
     providers: [],
     bootstrap: [AppComponent],
+    entryComponents: [PolComponent]
 })
 export class AppModule {
 }

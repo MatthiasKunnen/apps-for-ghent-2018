@@ -1,0 +1,51 @@
+@import '../../assets/sass/variables';
+
+div {
+    color: rgba(255, 255, 255, 0.90);
+    background-color: $primary-color !important;
+    padding: 2em;
+    height: 100vh;
+    overflow: hidden;
+    text-transform: uppercase;    
+    
+    h1 {
+        margin-bottom: 1em;
+    }
+
+    a {
+        padding: 1em 0;
+    }
+}
+
+.close {
+    position: fixed;
+    left: 2.5%;
+    top: 2.5%;
+    font-size: 1.3em;
+    color: rgba(255, 255, 255, 0.90);
+
+    :hover {
+        color: rgba(255, 255, 255, 0.50);
+        cursor: pointer;    
+    }
+}
+
+::ng-deep .mat-dialog-container {
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $primary-color !important;    
+}
+
+::ng-deep .cdk-overlay-pane {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    background-color: $primary-color !important;
+    padding: 0;
+}
+
+
+img {
+    width: 100%;
+}
+

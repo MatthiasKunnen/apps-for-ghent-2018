@@ -1,0 +1,11 @@
+.full-width {
+    width: 100% !important;
+}
+
+label, ::ng-deep .mat-form-field-label {
+    color: rgb(255, 255, 255) !important;
+}
+
+::ng-deep .mat-form-field-ripple {
+    background-color: rgb(255, 255, 255) !important;
+}
