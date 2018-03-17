@@ -7,7 +7,14 @@ label, ::ng-deep .mat-form-field-label {
 }
 
 ::ng-deep .mat-form-field-ripple {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: #dcdcdc !important;
+}
+
+
+#submit {
+    width: 100%;
+    margin: 1em 0;
+    background-color: #00D2FF;
 }
 
 h1 {

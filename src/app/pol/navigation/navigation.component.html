@@ -1,35 +1,45 @@
 <h1>Noar woar est?</h1>
 
-<mat-form-field class="full-width">
-  <input matInput placeholder="Van woar?">
-</mat-form-field>
+<form [formGroup]="form" (submit)="submit()">
+    <mat-form-field class="full-width">
+        <input matInput placeholder="Van woar?" formControlName="from">
+    </mat-form-field>
 
-<mat-form-field class="full-width">
-  <input matInput placeholder="Noar woar?">
-</mat-form-field>
+    <mat-form-field class="full-width">
+        <input matInput placeholder="Noar woar?" formControlName="to">
+    </mat-form-field>
 
-<h1>Zwiebeloars zwiebelen</h1>
+    <h1>Zwiebeloars zwiebelen</h1>
 
-<div fxLayout="row" fxLayoutAlign="space-between center">
-  <p>Viel zonne</p>
-  <p>Gien zonne</p>
-</div>
-<mat-slider class="full-width"></mat-slider>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        <p>Viel zonne</p>
+        <p>Gien zonne</p>
+    </div>
+    <mat-slider class="full-width"></mat-slider>
 
-<div fxLayout="row" fxLayoutAlign="space-between center">
-  <p>Goeie lucht</p>
-  <p>Viel uitlaotgasse</p>
-</div>
-<mat-slider class="full-width"></mat-slider>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <p>Goeie lucht</p>
+      <p>Viel uitlaotgasse</p>
+    </div>
+    <mat-slider class="full-width"></mat-slider>
 
-<div class="slide-wrap">
-  <mat-slide-toggle>Gien tramspore</mat-slide-toggle>
-</div>
+    <div class="slide-wrap">
+      <mat-slide-toggle>Gien tramspore</mat-slide-toggle>
+    </div>
 
-<div class="slide-wrap">
-  <mat-slide-toggle>Giene wind</mat-slide-toggle>
-</div>
+    <div class="slide-wrap">
+      <mat-slide-toggle>Giene wind</mat-slide-toggle>
+    </div>
 
-<div class="slide-wrap">
-  <mat-slide-toggle>Route me viel licht</mat-slide-toggle>  
-</div>
+    <div class="slide-wrap">
+      <mat-slide-toggle>Route me viel licht</mat-slide-toggle>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        <p>Goeie lucht</p>
+        <p>Viel uitlaotgasse</p>
+    </div>
+    <mat-slider class="full-width"></mat-slider>
+    <button mat-raised-button id="submit">
+        Vertrekke!
+    </button>
+</form>
