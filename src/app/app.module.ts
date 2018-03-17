@@ -45,6 +45,7 @@ import { PolComponent } from './pol/pol.component';
 import { NavigationComponent } from './pol/navigation/navigation.component';
 import { StartComponent } from './pol/start/start.component';
 import { MapsService } from "./maps.service";
+import { CloseNavService } from "./close-nav.service";
 
 @NgModule({
     declarations: [
@@ -96,6 +97,7 @@ import { MapsService } from "./maps.service";
     ],
     providers: [
         MapsService,
+        CloseNavService,
     ],
     bootstrap: [AppComponent],
     entryComponents: [PolComponent]

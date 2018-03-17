@@ -5,6 +5,7 @@ import {} from '@types/googlemaps';
 import TravelMode = google.maps.TravelMode;
 
 import { MapsService } from "../../maps.service";
+import { CloseNavService } from "../../close-nav.service";
 
 @Component({
     selector: 'app-navigation',
@@ -15,7 +16,8 @@ export class NavigationComponent implements OnInit {
 
     form: FormGroup;
 
-    constructor(private maps: MapsService) {
+    constructor(private maps: MapsService,
+                private closer: CloseNavService) {
     }
 
     ngOnInit() {
@@ -31,5 +33,6 @@ export class NavigationComponent implements OnInit {
             this.form.controls.to.value,
             TravelMode.WALKING,
         );
+        this.closer.close();
     }
 }
