@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
+import {} from '@types/googlemaps';
+
 import TravelMode = google.maps.TravelMode;
 import DirectionsStatus = google.maps.DirectionsStatus;
 import DirectionsRenderer = google.maps.DirectionsRenderer;
