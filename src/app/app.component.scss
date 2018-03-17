@@ -3,8 +3,11 @@
     height: 100vh;
     width: 100%;
 }
-button {
+img {
     position: fixed;
-    bottom: 2.5%;
-    right: 2.5%;
+    bottom: 0.5em;
+    right: 0.5em;
+    width: 7.5em;
+    height: 7,5em;
+    z-index: 20;
 }
