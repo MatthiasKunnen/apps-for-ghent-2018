@@ -4,7 +4,8 @@ div {
     color: rgba(255, 255, 255, 0.90);
     background-color: $primary-color !important;
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
     text-transform: uppercase;
 
     h1 {
